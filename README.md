@@ -8,3 +8,5 @@ It uses:
 -useReducer
 -tailwindcss, postcss & purgecss
 
+
+Full demo on https://luizzitol.github.io/PicGalery/.
