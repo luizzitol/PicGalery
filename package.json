@@ -1,20 +1,21 @@
 {
-  "name": "robofriends",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pic-galery",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-image-lightbox": "^5.1.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "css": "npx tailwindcss build tailwind.css -o src/tailwind.css -c tailwind.config.js",
+    "finalcss": "postcss tailwind.css -o src/tailwind.css",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +31,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
+    "gh-pages": "^2.2.0",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
   }
 }
