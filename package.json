@@ -1,6 +1,7 @@
 {
   "name": "pic-galery",
   "version": "1.0.0",
+  "homepage": "https://luizzitol.github.io/PicGalery/",
   "private": false,
   "dependencies": {
     "react": "^16.13.1",
